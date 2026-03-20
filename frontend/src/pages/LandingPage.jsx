@@ -98,7 +98,7 @@ export default function LandingPage() {
             </motion.p>
 
             <motion.div variants={fadeUp} custom={3} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/dashboard" className="btn-primary text-base flex items-center gap-2 group">
+              <Link to="/login" className="btn-primary text-base flex items-center gap-2 group">
                 Get Started
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>

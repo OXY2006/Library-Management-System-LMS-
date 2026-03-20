@@ -12,13 +12,15 @@ import ReviewsPage from './pages/dashboard/ReviewsPage';
 import PredictionsPage from './pages/dashboard/PredictionsPage';
 import ScannerPage from './pages/dashboard/ScannerPage';
 import SettingsPage from './pages/dashboard/SettingsPage';
+import LoginPage from './pages/auth/LoginPage';
 
 function App() {
   return (
     <ThemeProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/about" element={<LandingPage />} />
           <Route path="/dashboard" element={<DashboardLayout />}>
             <Route index element={<DashboardHome />} />
             <Route path="books" element={<BooksPage />} />
